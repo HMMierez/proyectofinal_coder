@@ -1,0 +1,17 @@
+// lugares.html 
+
+{% extends 'base.html' %}
+
+{% block title %}Lugares{% endblock %}
+
+{% block content %}
+
+<h1>Principales Lugares</h1> 
+
+<ul>
+  {% for lugar in lugares %}
+  <li>{{lugar.nombre}}</li> 
+  {% endfor %}  
+</ul>
+
+{% endblock %}

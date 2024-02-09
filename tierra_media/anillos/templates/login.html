@@ -1,0 +1,10 @@
+{% if error %}
+  {{ error }}  
+{% endif %}
+
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" name="username">  
+  <input type="password" name="password">
+  <button type="submit">Iniciar Sesión</button>  
+</form>
